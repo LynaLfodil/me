@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'StardewValley';
+  src:url('./Stardew_Valley.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'StardewValley', Arial, sans-serif;
+  color: #6B3710;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-frame {
+  width: 80vw;
+  height: 68vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  border: 20px solid transparent;
+  /* margin: 20px; */
+  border-image: url('menu_border.png') 35% round;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.profile-frame > div {
+  background-color: #ffd284;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.left-half {
+  /* height: 60vh; */
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #BF7C2A;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  /* gap: 20px; */
+}
+
+.right-half {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 60vw;
+  padding-left: 20px;
+  /* padding-top: 25px; */
+}
+
+/* Remove default list styles */
+.custom-list {
+  list-style: none; /* Remove bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+/* Style for each list item */
+.custom-list li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Align image and text */
+.list-item {
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Vertically center the image and text */
+  gap: 10px; /* Space between image and text */
+}
+
+/* Optional: Adjust image size */
+.list-item img {
+  width: 20px; /* Set image width */
+  height: 20px; /* Set image height */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* border-bottom: 2px solid #6B3710; */
+  padding-bottom: 10px;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 30px; */
+  gap: 10px;
+  /* padding-top: 25px; */
+  position: relative;
+  bottom: -15px;
+}
+
+.profile-picture-container {
+  /* background-color: #daad72; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.profile-picture-container > img {
+  height: 180px;
+  margin: 0;
+  position: relative;
+  left: 10px;
+  bottom: 3px;
+}
+
+.profile-picture {
+  display: flex;
+  border: 50px solid transparent;
+  border-image: url('portrait_bg.png') 35% round;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 0;
+  padding-right: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 100px;
+  background-color: #daad72;
+}
+
+span {
+  font-size: 20px;
+  color: black;
+}
+
+a {
+ color: black;
+ text-decoration: none;
+}
+a:active {
+  color:black;
+}
+
+.friends {
+  /* border-top: 3px solid #BF7C2A; */
+  /* width: auto; */
+  /* margin-top: 20px; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  /* padding-top: 10px; */
+  height: 25vw;
+}
+
+.friends::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(60vw + 4px);
+  height: 3px;
+  background-color: #BF7C2A; 
+}
+
+.frame {
+  border: 8px solid transparent;
+  border-image: url('menu_border.png') 35% round;
+  border-radius: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 40px;
+  background-color: #ffd284;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  background-color: #feeaa0; 
+  /* padding: 10px; */
+}
+
+.frame span {
+  padding: 5px;
+  position: relative;
+}
+
+.frame span:first-child {
+  border-right: 2px solid transparent;
+  border-image: linear-gradient(
+    to bottom,
+    #BF7C2A 0%,
+    #BF7C2A 20%,
+    #E0A45C 20%,
+    #E0A45C 80%,
+    #BF7C2A 80%,
+    #BF7C2A 100%
+  );
+  border-image-slice: 1;
+}
+
+.portrait {
+  border: 30px solid transparent;
+  border-image: url('portrait_bg.png') 35% round;
+  border-radius: 15px;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 40px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.pets {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  /* height: 30vh; */
+}
+
+.pets > div > p {
+  text-align: center;
+  color: black;
+  font-size: large;
+  margin-top: 10px;
+}
+.pets::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 20vw;
+  height: 3px;
+  background-color: #BF7C2A;
+}
+
+.picture {
+  height: 30px;
+  width: auto;
+}
+
+.loves-and-hates::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: calc(40vw + 5px);
+  height: 3px;
+  background-color: #BF7C2A;
+}
+
+.loves-and-hates {
+  position: relative;
+  padding-top: 18px;
+
+}
+
+.biography {
+  padding-top: 20px;
+}
